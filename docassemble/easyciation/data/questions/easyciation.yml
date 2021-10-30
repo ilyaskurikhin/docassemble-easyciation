@@ -4,7 +4,8 @@
 mandatory: True
 code: |
   welcome_complete
-  disclamer_complete
+  disclaimer_complete
+  eligibility_complete
 ---
 
 # Welcome page
@@ -20,6 +21,7 @@ subquestion: |
 under: |
   Press continue to start the questionnaire. 
 ---  
+
 # Initialize variables for interview
 ---
 objects:
@@ -47,11 +49,25 @@ attachment:
 ---
 
 # Interview questions
+#
+# starting with the disclamer
 ---
-question: Disclamer
-continue button field: disclamer_complete
+question: Disclaimer
+continue button field: disclaimer_complete
 subquestion: |
   By pressing continue below, you acknowledge that you understand [conditions]
+---
+# check that client is of age and has representative in CH
+---
+question: Eligibility
+continue button field: eligibility_complete
+subquestion: |
+  For your association to be created and to be able to manage it successfully, one of the founders needs to fulfill some conditions. It at least one of the founders:
+ 
+  * over 18 years old?
+  * a legal resident of Switzerland?
+  
+  If one of you fulfills both conditions, press continue. 
 ---
 question: Name of the Association
 fields:
