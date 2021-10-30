@@ -17,7 +17,8 @@ continue button field: welcome_complete
 question: Welcome
 subquestion: |
   This website will help you set up your association.
-  To make sure that the assuciation statutes fit your needs, we will ask you a series of questions. 
+  
+  To make sure that the association statutes fit your needs, we will ask you a series of questions. 
 under: |
   Press continue to start the questionnaire. 
 ---

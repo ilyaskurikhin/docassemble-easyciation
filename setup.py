@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.easyciation',
       version='0.0.1',
       description=('Create your association. '),
-      long_description='# docassemble.easyciation\n\nCreate your association. \n\n## Author\n\nIlya Skurikhin, ilya@skurikhin.ch\n\n',
+      long_description='# docassemble.easyciation\r\n\r\nCreate your association. \r\n\r\n## Author\r\n\r\nIlya Skurikhin, ilya@skurikhin.ch\r\n\r\n',
       long_description_content_type='text/markdown',
       author='Ilya Skurikhin',
       author_email='ilya@skurikhin.ch',
