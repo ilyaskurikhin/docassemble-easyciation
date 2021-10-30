@@ -1,14 +1,7 @@
 # General blocks
 ---
-objects:
-  - objectives: DAList
-  - general_assembly: DAObject
-  - committee: DAObject
-  - auditors: DAObject
----
-code: |
-  objectives.there_are_any = True
----
+# Ensure that every visitor sees the welcome page first. 
+mandatory: True
 code: |
   welcome_complete
   disclamer_complete
@@ -18,7 +11,6 @@ code: |
 #
 # the welcome page is before the intervew, as it is also the homepage
 ---
-mandatory: True
 continue button field: welcome_complete
 question: Welcome
 subquestion: |
@@ -27,8 +19,18 @@ subquestion: |
   To make sure that the association statutes fit your needs, we will ask you a series of questions. 
 under: |
   Press continue to start the questionnaire. 
+---  
+# Initialize variables for interview
 ---
-
+objects:
+  - objectives: DAList
+  - general_assembly: DAObject
+  - committee: DAObject
+  - auditors: DAObject
+---
+code: |
+  objectives.there_are_any = True
+---
 # Statute generator
 #
 # This question will generate the statues and make them available
@@ -45,6 +47,11 @@ attachment:
 ---
 
 # Interview questions
+---
+question: Disclamer
+continue button field: disclamer_complete
+subquestion: |
+  By pressing continue below, you acknowledge that you understand [conditions]
 ---
 question: Name of the Association
 fields:
