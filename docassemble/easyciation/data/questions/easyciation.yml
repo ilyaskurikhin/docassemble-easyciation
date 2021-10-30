@@ -25,6 +25,7 @@ under: |
 # Initialize variables for interview
 ---
 objects:
+  - association: DAObject
   - objectives: DAList
   - general_assembly: DAObject
   - committee: DAObject
@@ -44,7 +45,7 @@ mandatory: True
 question: Here are the Articles of Incorporation
 attachment:
   - name: Articles of Incorporation
-    filename: ${ association_name } - Statutes
+    filename: ${ association.name } - Statutes
     content file: statutes.md
 ---
 
@@ -70,32 +71,45 @@ subquestion: |
   If one of you fulfills both conditions, press continue. 
 ---
 question: Name of the Association
+subquestion: |
+  Choose the name that will define your association. 
 fields:
-  - Name: association_name
+  - Name: association.name
 ---
-question: Is the ${ association_name } non-political?
-yesno: is_nonpolitical
+question: Will ${ association.name } pursue a political or religious goal?
+subquestion: |
+  If you answer no, your association will not be able to pursue a any goal that is politically or religiously oriented. We advise you to think broadly about what considered political or religious. 
+  
+  Your members individual views are not taken into account, what matters is the action of the association as a whole. 
+yesno: association.political
 ---
-question: Is the ${ association_name } established for an unlimited time?
+question: Do you want to limit the time that ${ association.name } will remain active?
+subquestion: |
+  If you are creating this association for one particular event, you can limit its life in the statutes. 
 fields: 
-  - Is the ${ association_name } established for an unlimited time?: is_unlimited_period
+  - Do you want to plan an end date?: association.is_limited_period
     datatype: yesnoradio
-  - What is the end date for the association?: end_date
+  - What is the end date for the association?: association.end_date
     datatype: date
     show if:
-      variable: is_unlimited_period
-      is: False
-  - Where are the association headquarters: association_headquarters 
+      variable: association.is_limited_period
+      is: True
+---
+question: Headquarters
+subquestion: |
+  Your association need to have a home. This is usually the place where your association will meet most often.
+fields:
+  - Where are the association headquarters: association.headquarters 
 ---
 code: |
-  if is_unlimited_period:
+  if is_limited_period:
     length_of_time = "for an unlimited period"
   else:
     length_of_time = limited_period_of_time
 ---
 template: limited_period_of_time
 content: |
-  from the adoption of the Articles of Incorporation until ${ end_date }
+  from the adoption of the Articles of Incorporation until ${ association.end_date }
 ---
 question: What is the ${ ordinal(i) } objective?
 fields:

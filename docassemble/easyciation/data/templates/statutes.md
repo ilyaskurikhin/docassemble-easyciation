@@ -1,5 +1,4 @@
-
-[BOLDCENTER]${ association_name }
+[BOLDCENTER]${ association.name }
 
 [BOLDCENTER]Articles of Incorporation
 
@@ -9,15 +8,31 @@
 
 Art. 1 **Denomination**
 
-1. ${ association_name } is an association which pursues an ideal and non-profitable goal according to the present articles of incorporation and the articles 60 CC and following of the Swiss Civil Code.
+% if not association.political: 
 
-% if is_nonpolitical:
+1. ${ association.name } is an association according to the present articles of incorporation and the articles 60 CC and following of the Swiss Civil Code.
+
 2. The Association is non-political and confessionally independent.
+
+% else:
+
+${ association.name } is an association according to the present articles of incorporation and the articles 60 CC and following of the Swiss Civil Code.
+
 % endif
+
+
 
 Art. 2 **Duration et headquarters**
 
-The Association is established ${ length_of_time }. Its headquarters is in ${ association_headquarters }.
+% if association.is_limited_period:
+The Association is established until the ${ association.end_date }
+% else:
+The Association is established for an unlimited period of time.
+% endif
+
+Its headquarters is in ${ association.headquarters }.
+
+
 
 Art. 3 **Purpose**
 
@@ -29,18 +44,25 @@ a. ${ objective };
 
 2. To this end, it aims notably to: ${ primary_objective }
 
+
+
 Art. 4 **Resources**
 
-The Association’s resources come from: a. donations and bequests
+The Association’s resources come from: 
+a. donations and bequests
 b. sponsorship
 c. public and private subventions
 d. contributions from members
 e. and any resources authorized by law
 
+
+
 Art. 5 **Exercise Period**
 
 The association's exercice period is of one calendar year.
-  
+
+
+
 # MEMBERSHIP
 
 Art. 6 **Membership**
