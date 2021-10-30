@@ -23,8 +23,9 @@ subquestion: |
   This website will help you set up your association.
   
   To make sure that the association statutes fit your needs, we will ask you a series of questions. 
-under: |
+
   Press continue to start the questionnaire. 
+section: Welcome
 ---  
 
 # Initialize variables for interview
@@ -52,12 +53,14 @@ attachment:
   - name: Articles of Incorporation
     filename: ${ association.name } - Statutes
     content file: statutes.md
+section: Generate Statutes
 ---
 
 # Interview questions
 #
 # starting with the disclamer
 ---
+section: Disclaimer
 question: Disclaimer
 continue button field: disclaimer_complete
 subquestion: |
@@ -65,6 +68,7 @@ subquestion: |
 ---
 # check that client is of age and has representative in CH
 ---
+section: Eligibility
 question: Eligibility
 continue button field: eligibility_complete
 subquestion: |
@@ -75,12 +79,14 @@ subquestion: |
   
   If one of you fulfills both conditions, press continue. 
 ---
+section: Name
 question: Name of the Association
 subquestion: |
   Choose the name that will define your association. 
 fields:
   - Name: association.name
 ---
+section: Independance
 question: Will ${ association.name } pursue a political or religious goal?
 subquestion: |
   If you answer no, your association will not be able to pursue a any goal that is politically or religiously oriented. We advise you to think broadly about what considered political or religious. 
@@ -88,6 +94,7 @@ subquestion: |
   Your members individual views are not taken into account, what matters is the action of the association as a whole. 
 yesno: association.political
 ---
+section: Duration
 question: Do you want to limit the time that ${ association.name } will remain active?
 subquestion: |
   If you are creating this association for one particular event, you can limit its life in the statutes. 
@@ -100,29 +107,23 @@ fields:
       variable: association.is_limited_period
       is: True
 ---
+section: Headquarters
 question: Headquarters
 subquestion: |
   Your association need to have a home. This is usually the place where your association will meet most often.
 fields:
   - Where are the association headquarters: association.headquarters 
 ---
-code: |
-  if is_limited_period:
-    length_of_time = "for an unlimited period"
-  else:
-    length_of_time = limited_period_of_time
----
-template: limited_period_of_time
-content: |
-  from the adoption of the Articles of Incorporation until ${ association.end_date }
----
+section: Goals
 question: What is the ${ ordinal(i) } objective?
 fields:
   - Objective: objectives[i]
 ---
+section: Goals
 question: Are there any more objectives?
 yesno: objectives.there_is_another
 ---
+section: Goals
 question: What is the primary objective?
 fields:
   - no label: primary_objective
