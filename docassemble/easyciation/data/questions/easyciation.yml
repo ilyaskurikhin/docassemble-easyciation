@@ -1,3 +1,4 @@
+# General blocks
 ---
 objects:
   - objectives: DAList
@@ -12,6 +13,11 @@ code: |
   welcome_complete
   disclamer_complete
 ---
+
+# Welcome page
+#
+# the welcome page is before the intervew, as it is also the homepage
+---
 mandatory: True
 continue button field: welcome_complete
 question: Welcome
@@ -22,12 +28,23 @@ subquestion: |
 under: |
   Press continue to start the questionnaire. 
 ---
+
+# Statute generator
+#
+# This question will generate the statues and make them available
+# as a downloadable PDF. It will ask all the questions necessary
+# for the PDF to be created, in the order that the variables 
+# appear in the document. 
+---
 mandatory: True
 question: Here are the Articles of Incorporation
 attachment:
   - name: Articles of Incorporation
     filename: ${ association_name } - Statutes
     content file: statutes.md
+---
+
+# Interview questions
 ---
 question: Name of the Association
 fields:
