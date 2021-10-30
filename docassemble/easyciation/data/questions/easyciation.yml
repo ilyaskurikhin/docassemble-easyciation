@@ -32,13 +32,13 @@ section: Welcome
 ---
 objects:
   - association: DAObject
-  - objectives: DAList
+  - goals: DAList
   - general_assembly: DAObject
   - committee: DAObject
   - auditors: DAObject
 ---
 code: |
-  objectives.there_are_any = True
+  goals.there_are_any = True
 ---
 # Statute generator
 #
@@ -117,19 +117,18 @@ fields:
 section: Goals
 question: What is the ${ ordinal(i) } objective?
 fields:
-  - Objective: objectives[i]
+  - Objective: goals[i]
 ---
 section: Goals
-question: Are there any more objectives?
-yesno: objectives.there_is_another
----
-section: Goals
-question: What is the primary objective?
+question: What is the primary goal?
 fields:
-  - no label: primary_objective
+  - no label: primary_goal
     datatype: radio
     code: |
-      objectives
+      goals
+  - label: Are there any other goals?
+    datatype: yesnoradio
+    field: goals.there_is_another
 ---
 question: test
 yesno: general_assembly.composition

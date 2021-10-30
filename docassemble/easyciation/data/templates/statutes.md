@@ -38,11 +38,11 @@ Art. 3 **Purpose**
 
 1. The association has the following objects:
 
-% for objective in objectives:
-a. ${ objective };
+% for goal in goals:
+a. ${ goal };
 % endfor
 
-2. To this end, it aims notably to: ${ primary_objective }
+2. To this end, it aims notably to: ${ primary_goal }
 
 
 
