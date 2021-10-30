@@ -1,0 +1,15 @@
+---
+sections:
+  - Welcome:
+    - Disclaimer
+    - Eligibility
+  - Basics:
+    - Duration
+    - Headquarters
+    - Goals
+  - Generate Statutes
+---
+features:
+  navigation: True
+  progress bar: True
+---

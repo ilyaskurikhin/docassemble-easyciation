@@ -1,5 +1,10 @@
 # General blocks
 ---
+# includes
+---
+include:
+  - navigation.yml
+---
 # Ensure that every visitor sees the welcome page first. 
 mandatory: True
 code: |
