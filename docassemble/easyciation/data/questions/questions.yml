@@ -5,6 +5,18 @@ subquestion: |
   Choose the name that will define your association. 
 fields:
   - Name: association.name
+
+---
+section: Logo
+question: Logo of the association
+
+fields:
+  - Picture: user_picture
+    datatype: file
+    maximum image size: 100
+    image upload type: jpeg
+    
+   
 ---
 section: Independance
 question: Will ${ association.name } pursue a political or religious goal?
@@ -33,6 +45,7 @@ subquestion: |
   Your association need to have a home. This is usually the place where your association will meet most often.
 fields:
   - Where are the association headquarters: association.headquarters 
+  
 ---
 section: Goals
 question: What is the ${ ordinal(i) } objective?
