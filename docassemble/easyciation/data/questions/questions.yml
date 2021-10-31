@@ -1,0 +1,79 @@
+---
+section: Name
+question: Name of the Association
+subquestion: |
+  Choose the name that will define your association. 
+fields:
+  - Name: association.name
+---
+section: Independance
+question: Will ${ association.name } pursue a political or religious goal?
+subquestion: |
+  If you answer no, your association will not be able to pursue a any goal that is politically or religiously oriented. We advise you to think broadly about what considered political or religious. 
+  
+  Your members individual views are not taken into account, what matters is the action of the association as a whole. 
+yesno: association.political
+---
+section: Duration
+question: Do you want to limit the time that ${ association.name } will remain active?
+subquestion: |
+  If you are creating this association for one particular event, you can limit its life in the statutes. 
+fields: 
+  - Do you want to plan an end date?: association.is_limited_period
+    datatype: yesnoradio
+  - What is the end date for the association?: association.end_date
+    datatype: date
+    show if:
+      variable: association.is_limited_period
+      is: True
+---
+section: Headquarters
+question: Headquarters
+subquestion: |
+  Your association need to have a home. This is usually the place where your association will meet most often.
+fields:
+  - Where are the association headquarters: association.headquarters 
+---
+section: Goals
+question: What is the ${ ordinal(i) } objective?
+fields:
+  - Objective: goals[i]
+---
+section: Goals
+question: What is the primary goal?
+subquestion: |
+  % if association.political:
+  Make sure to list the political or religious goal of your association. 
+  % endif
+fields:
+  - no label: primary_goal
+    datatype: radio
+    code: |
+      goals
+  - label: Are there any other goals?
+    datatype: yesnoradio
+    field: goals.there_is_another
+---
+question: test
+yesno: general_assembly.composition
+---
+generic object: DAObject
+question: How is ${ x } composed?
+fields:
+  - no label: x.composition
+    default: ${ x.default_composition }
+    datatype: area
+---
+code: |
+  general_assembly.default_composition = "It is composed of the members of the Association."
+  committee.default_composition = commcompdefault
+---
+template: commcompdefault
+content: |
+  "The Committee is composed of a minimum of ${ minimum_number } and a maximum of ${ maximum_number } natural persons elected by the General Assembly, including at least a President, a Secretary, and a Treasurer."
+---
+question: Committee Composition
+fields:
+  - What is the minimum number?: minimum_number
+  - What is the maximum number?: maximum_number
+---
