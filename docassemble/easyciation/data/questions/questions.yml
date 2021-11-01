@@ -9,7 +9,8 @@ fields:
 ---
 section: Logo
 question: Logo of the association
-
+subquestion: | 
+  Please upload the logo of your association
 fields:
   - Picture: user_picture
     datatype: file
@@ -43,9 +44,36 @@ section: Headquarters
 question: Headquarters
 subquestion: |
   Your association need to have a home. This is usually the place where your association will meet most often.
-fields:
-  - Where are the association headquarters: association.headquarters 
-  
+field: association.headquarters 
+
+dropdown:
+  - Sneakers
+  - Appenzell Rhodes-Extérieures (AR)
+  - Appenzell Rhodes-Intérieures (AI)
+  - Argovie (AG)
+  - Bâle-campagne (BL)
+  - Bâle-ville (BS)
+  - Berne (BE)
+  - Fribourg (FR)
+  - Genève (GE)
+  - Glaris (GL)
+  - Grisons (GR)
+  - Jura (JU)
+  - Lucerne (LU)
+  - Neuchâtel (NE)
+  - Nidwald (NW)
+  - Obwald (OW)
+  - Saint-Gall (SG
+  - Schaffouse (SH)
+  - Schwytz (SZ)
+  - Soleure (SO)
+  - Tessin (TI)
+  - Thurgovie (TG)
+  - Uri (UR)
+  - Valais (VS)
+  - Vaud (VD)
+  - Zoug (ZG)
+  - Zurich (ZH) 
 ---
 section: Goals
 question: What is the ${ ordinal(i) } objective?
