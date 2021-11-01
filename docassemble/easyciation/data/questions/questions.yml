@@ -12,7 +12,7 @@ question: Logo of the association
 subquestion: | 
   Please upload the logo of your association
 fields:
-  - Picture: user_picture
+  - Picture: association.logo
     datatype: file
     maximum image size: 100
     image upload type: jpeg
@@ -44,10 +44,10 @@ section: Headquarters
 question: Headquarters
 subquestion: |
   Your association need to have a home. This is usually the place where your association will meet most often.
+
 field: association.headquarters 
 
 dropdown:
-  - Sneakers
   - Appenzell Rhodes-Extérieures (AR)
   - Appenzell Rhodes-Intérieures (AI)
   - Argovie (AG)
@@ -74,6 +74,15 @@ dropdown:
   - Vaud (VD)
   - Zoug (ZG)
   - Zurich (ZH) 
+
+---
+section: Zurich requirements
+question: Zurich address requirements
+subquestion: |
+  If your association is based in Zurich, a complete address is required. Please complete accordingly.
+fields:
+  - Exact address: association.address
+
 ---
 section: Goals
 question: What is the ${ ordinal(i) } objective?
