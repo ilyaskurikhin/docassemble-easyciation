@@ -5,7 +5,9 @@ subquestion: |
   Choose the name that will define your association. 
 fields:
   - Name: association.name
-
+help: |
+  If you are not sure how much
+  money to seek 
 ---
 section: Logo
 question: Logo of the association
@@ -126,4 +128,15 @@ question: Committee Composition
 fields:
   - What is the minimum number?: minimum_number
   - What is the maximum number?: maximum_number
+
 ---
+section: Committee members
+question: Please identify the members of the association
+subquestion: |
+  Enter the details of the president of the association
+fields:
+  - Name: association.president.name
+  - Middle name: association.president.middle.name
+  
+  
+
