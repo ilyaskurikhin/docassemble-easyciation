@@ -109,4 +109,7 @@ subquestion: |
   * a legal resident of Switzerland?
   
   If one of you fulfills both conditions, press continue. 
+  
+help: |
+  At least one of the founders MUST be older than 18 years old and reside in Switzerland.
 ---

@@ -94,7 +94,7 @@ fields:
 section: Goals
 question: What is the primary goal?
 subquestion: |
-  % if association.political:
+  %if association.political:
   Make sure to list the political or religious goal of your association. 
   % endif
 fields:
@@ -105,6 +105,8 @@ fields:
   - label: Are there any other goals?
     datatype: yesnoradio
     field: goals.there_is_another
+help: |
+  Remember to add the political or religious goals of your association if any.
 ---
 question: test
 yesno: general_assembly.composition
@@ -129,14 +131,6 @@ fields:
   - What is the minimum number?: minimum_number
   - What is the maximum number?: maximum_number
 
----
-section: Committee members
-question: Please identify the members of the association
-subquestion: |
-  Enter the details of the president of the association
-fields:
-  - Name: association.president.name
-  - Middle name: association.president.middle.name
-  
-  
+
+
 
