@@ -19,6 +19,8 @@ fields:
     maximum image size: 100
     image upload type: jpeg
 
+mandatory: false
+
 help: |
   A logo is not mandatory.
   You can create a free logo using any of the following platforms:
