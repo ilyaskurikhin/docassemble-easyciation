@@ -2,6 +2,8 @@
 
 [BOLDCENTER]Articles of Incorporation
 
+${association.logo}
+
 [STOP_INDENTATION]
 
 # GENERAL PROVISIONS
