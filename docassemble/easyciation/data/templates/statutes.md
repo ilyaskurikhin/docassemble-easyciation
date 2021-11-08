@@ -6,6 +6,8 @@ ${association.logo}
 
 [STOP_INDENTATION]
 
+[PAGEBREAK]
+
 # GENERAL PROVISIONS
 
 Art. 1 **Denomination**

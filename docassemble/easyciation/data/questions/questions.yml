@@ -18,7 +18,14 @@ fields:
     datatype: file
     maximum image size: 100
     image upload type: jpeg
-    
+
+help: |
+  A logo is not mandatory.
+  You can create a free logo using any of the following platforms:
+  https://fr.freelogodesign.org/
+  https://looka.com/logo-maker/
+  
+  These are examples. Easyciation is in no way affiliated to these service providers.    
    
 ---
 section: Independance
@@ -94,7 +101,7 @@ fields:
 section: Goals
 question: What is the primary goal?
 subquestion: |
-  % if association.political:
+  %if association.political:
   Make sure to list the political or religious goal of your association. 
   % endif
 fields:
