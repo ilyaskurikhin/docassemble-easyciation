@@ -14,7 +14,10 @@ question: Logo of the association
 subquestion: | 
   Please upload the logo of your association
 fields:
+  - "Do you want to select a logo?": association.has_logo
+    datatype: yesnoradio
   - Picture: association.logo
+    show if : association.has_logo
     datatype: file
     maximum image size: 100
     image upload type: jpeg
