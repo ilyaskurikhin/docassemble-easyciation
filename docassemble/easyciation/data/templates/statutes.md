@@ -168,7 +168,7 @@ Art. 14 **Composition**
     a. A President;
     b. A Secretary General;
     c. A Treasurer.
-2. The Committee is composed of a minimum of three and a maximum of nine natural persons elected by the General Assembly, including at least a President, a Secretary, and a Treasurer.
+2. The Committee is composed of a minimum of ${ minimum_number } and a maximum of ${ maximum_number } natural persons elected by the General Assembly, including at least a President, a Secretary, and a Treasurer.
 3. At least one member of the Committee, with power of signature, shall reside in Switzerland.
 4. The duration of their mandate is of one-year renewable.
 5. For each position, the candidate who obtains the greatest number of valid votes cast shall be elected. In the event of a tie, a second round shall be held to decide between the candidates.
@@ -242,4 +242,6 @@ Art. 24 **Entering into force**
 Art. 25 **Displays and Communication**
 
 One copy of these articles of association shall be signed and kept in the archives of the Association and may be consulted by third parties.
+
+[BEGIN_TWOCOL] First signatory [BREAK] Second signatory [END_TWOCOL]
 
