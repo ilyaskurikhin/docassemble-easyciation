@@ -140,10 +140,4 @@ fields:
   - What is the minimum number?: minimum_number
   - What is the maximum number?: maximum_number
 
----
-section: Congratulations
-question: |
-  Congratulations!
-subquestion: |
-  You are all done with the interview.
-mandatory: True
+
