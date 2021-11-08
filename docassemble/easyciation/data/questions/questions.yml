@@ -59,43 +59,41 @@ question: Headquarters
 subquestion: |
   Your association need to have a home. This is usually the place where your association will meet most often.
 
-field: association.headquarters 
+fields: 
 
-dropdown:
-  - Appenzell Rhodes-Extérieures (AR)
-  - Appenzell Rhodes-Intérieures (AI)
-  - Argovie (AG)
-  - Bâle-campagne (BL)
-  - Bâle-ville (BS)
-  - Berne (BE)
-  - Fribourg (FR)
-  - Genève (GE)
-  - Glaris (GL)
-  - Grisons (GR)
-  - Jura (JU)
-  - Lucerne (LU)
-  - Neuchâtel (NE)
-  - Nidwald (NW)
-  - Obwald (OW)
-  - Saint-Gall (SG
-  - Schaffouse (SH)
-  - Schwytz (SZ)
-  - Soleure (SO)
-  - Tessin (TI)
-  - Thurgovie (TG)
-  - Uri (UR)
-  - Valais (VS)
-  - Vaud (VD)
-  - Zoug (ZG)
-  - Zurich (ZH) 
-
----
-section: Headquarters
-question: Zurich address requirements
-subquestion: |
-  If your association is based in Zurich, a complete address is required. Please complete accordingly.
-fields:
-  - Exact address: association.address
+- Canton: association.canton
+  input type: dropdown
+  choices:
+    - Appenzell Auserrhoden (AR)
+    - Appenzell Innerrhoden (AI)
+    - Aargau (AG)
+    - Basel Landschaft (BL)
+    - Basel Stadt (BS)
+    - Bern (BE)
+    - Fribourg (FR)
+    - Genève (GE)
+    - Glarus (GL)
+    - Graubunden (GR)
+    - Jura (JU)
+    - Luzern (LU)
+    - Neuchâtel (NE)
+    - Nidwald (NW)
+    - Obwald (OW)
+    - Sankt-Gallen (SG)
+    - Schaffhausen (SH)
+    - Schwytz (SZ)
+    - Solothurn (SO)
+    - Ticino (TI)
+    - Thurgau (TG)
+    - Uri (UR)
+    - Valais (VS)
+    - Vaud (VD)
+    - Zug (ZG)
+    - Zurich (ZH) 
+- Address: association.address
+  show if:
+    variable: association.canton
+    is: Zurich (ZH)
 
 ---
 section: Goals

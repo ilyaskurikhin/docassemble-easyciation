@@ -36,7 +36,11 @@ The Association is established until the ${ association.end_date }
 The Association is established for an unlimited period of time.
 % endif
 
-The headquarters of the association are in the canton: ${ association.headquarters }.
+The headquarters of the association are in the canton: ${ association.canton }.
+
+% if "ZH" in association.canton:
+The address of the associaiton is : ${ association.address }
+% endif
 
 
 
