@@ -104,7 +104,7 @@ fields:
 section: Goals
 question: What is the primary goal?
 subquestion: |
-  %if association.political:
+  % if association.political:
   Make sure to list the political or religious goal of your association. 
   % endif
 fields:
