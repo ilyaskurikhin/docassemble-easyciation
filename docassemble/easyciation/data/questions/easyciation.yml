@@ -22,11 +22,11 @@ continue button field: welcome_complete
 question: Welcome
 subquestion: |
   
-  Welcome to Easyciation!
+  Welcome to **Easyciation**!
   
-  This website will help you get started on the creation of your Swiss association.
+  This website will help you get started on the **creation of your Swiss association.**
   
-  In order to help you make your project come true we aim at assisting you in one of the most important steps: Drafting your articles of association.
+  In order to help you make your project come true we aim at assisting you in one of the most important steps: **Drafting your articles of association.**
   
   You will need to answer a set of questions to custom this document.
   
@@ -35,26 +35,33 @@ subquestion: |
   Click on the help button on the top left if you need further information.
   
 help: |
-  The creation of a Swiss association 
+  ####The creation of a Swiss association 
   
+  ######Creating a Swiss association is really easy. 
+  
+  #####How many people do I need to create an association?
   An association can legally be established by the will of two or more members.
+  It acquires legal personality as soon as their intention to exist as a legal entity is expressed in its Articles of Association.
   
-  It acquires legal personality as soon as their intention to exist as a legal entity isexpressed in its Articles ofAssociation.
+  #####Do I need to finance the association?
+  No minimal capital is required to create an association.
   
-  No minimal capital is required.
+  #####What is exactly an association?
+  Upon its constitution, an association becomes an autonomous legal entity, with its own rights and obligations.
   
-  Upon its constitution, an association becomes an autonomous legal entity, with itsown rights and obligations.
+  #####What steps should I follow in order to create my association in Switzerland?
   
-  The founding members must hold a constitutive assembly to:
+  At least two founding members must hold a constitutive assembly
   
-  FIRST - This is what we will do today!
-  Adopt the Articles of Association (which include the purpose of theorganisation)
+  ######FIRST - Articles of association
+  Adopt the Articles of Association which include the purpose of the organisation. This is what we will do today!
   
-  SECOND
-  Appoint the members of the mandatory bodies of the organisation (Generalassembly + the Board)
+  ######SECOND - Appointment of members
+  Appoint the members of the mandatory bodies of the organisation. General assembly + the Board
   
-  THIRD
-  Determine the registered office (the seat) of the association. As stated inArticle 60 of the Swiss Civil Code, the purpose of an association may be“political, religious, scientific, artistic, charitable, social or any other non-economic purpose”
+  ######THIRD - Seat and purpose
+  Determine the registered office (the seat) of the association. 
+  As stated in Article 60 of the Swiss Civil Code, the purpose of an association may be“political, religious, scientific, artistic, charitable, social or any other non-economic purpose”. This will also be covered in the draft of the articles of association that we will help you create today.
 
 section: Welcome
 ---  
