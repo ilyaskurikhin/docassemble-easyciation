@@ -103,7 +103,7 @@ section: Eligibility
 question: Eligibility
 continue button field: eligibility_complete
 subquestion: |
-  For your association to be created and to be able to manage it successfully, one of the founders needs to fulfill some conditions. It at least one of the founders:
+  At least one of the founders MUST be older than 18 years old and reside in Switzerland.It at least one of the founders:
  
   * over 18 years old?
   * a legal resident of Switzerland?
@@ -111,6 +111,6 @@ subquestion: |
   If one of you fulfills both conditions, press continue. 
   
 help: |
-  At least one of the founders MUST be older than 18 years old and reside in Switzerland.
+  For your association to be created and to be able to manage it successfully, one of the founders needs to fulfill some conditions. 
 ---
 
