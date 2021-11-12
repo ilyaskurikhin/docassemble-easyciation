@@ -105,12 +105,12 @@ fields:
 
 ---
 section: Goals
-question: What is the ${ ordinal(i) } objective?
+question: What is the ${ ordinal(i) } purpose?
 fields:
   - Objective: goals[i]
 ---
 section: Goals
-question: What is the primary goal?
+question: What is the primary purpose?
 subquestion: |
   % if (association.is_political or association.is_religious):
   Make sure to list the political or religious goal of your association. 
@@ -120,7 +120,7 @@ fields:
     datatype: radio
     code: |
       goals
-  - label: Are there any other goals?
+  - label: Are there any other purposes?
     datatype: yesnoradio
     field: goals.there_is_another
 help: |

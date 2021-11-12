@@ -1,6 +1,6 @@
 [BOLDCENTER]${ association.name }
 
-[BOLDCENTER]Articles of Incorporation
+[BOLDCENTER]Articles of Association
 
 %if association.has_logo:
 [CENTER]${association.logo}
@@ -20,7 +20,7 @@ ${ association.name } is an association according to the present articles of inc
 
 % else:
 
-1. ${ association.name } is an association according to the present articles of incorporation and the articles 60 CC and following of the Swiss Civil Code.
+1. ${ association.name } is an association according to the present articles of association and the articles 60 and following of the Swiss Civil Code.
 
 % if association.is_political:
 2. The Association is confessionally independent.
@@ -54,8 +54,17 @@ Art. 3 **Purpose**
 
 1. The association has the following purposes:
 
+[//]: # (this is... a hack)
+[//]: # (without this loop, primary_goal is asked first)
+[//]: # (causing docassemble to crash)
 % for goal in goals:
-a. ${ goal };
+% endfor
+
+a. ${ primary_goal }
+% for goal in goals:
+% if goal != primary_goal:
+a. ${ goal }
+% endif
 % endfor
 
 
