@@ -3,7 +3,7 @@
 [BOLDCENTER]Articles of Incorporation
 
 %if association.has_logo:
-${association.logo}
+[CENTER]${association.logo}
 %endif
 
 [STOP_INDENTATION]

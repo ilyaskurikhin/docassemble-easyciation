@@ -91,12 +91,12 @@ code: |
 # appear in the document. 
 ---
 mandatory: True
-question: Here are the Articles of Incorporation
+question: Here are the Articles of Association
 attachment:
-  - name: Articles of Incorporation
-    filename: ${ association.name } - Statutes
+  - name: Articles of Association
+    filename: ${ association.name } - Articles of Association
     content file: statutes.md
-section: Generate Statutes
+section: Generate Articles of Association
 event: generate_statutes
 ---
 

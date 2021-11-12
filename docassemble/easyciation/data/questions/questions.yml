@@ -19,7 +19,8 @@ fields:
   - Picture: association.logo
     show if : association.has_logo
     datatype: file
-    maximum image size: 100
+    accept: |
+      "image/jpeg, image/png, image/bmp, image/svg"
     image upload type: jpeg
 
 mandatory: false
