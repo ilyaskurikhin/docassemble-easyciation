@@ -57,11 +57,11 @@ Art. 3 **Purpose**
 [//]: # (this is... a hack)
 [//]: # (without this loop, primary_goal is asked first)
 [//]: # (causing docassemble to crash)
-% for goal in goals:
+% for goal in association.goals:
 % endfor
 
 a. ${ primary_goal }
-% for goal in goals:
+% for goal in association.goals:
 % if goal != primary_goal:
 a. ${ goal }
 % endif
@@ -133,21 +133,16 @@ Art. 9 **Definition**
 7. An ordinary meeting may become a General Assembly, by means of universal assembly, when all the members of the Association are present or represented and when they unanimously consent to it.
 8. The President shall chair the General Assembly. If absent, he/she shall be replaced by another Member of the Committee.
 
-Art. 10 **Competences**
+Art. 10 **General Assembly Competences**
 
 The General Assembly is, among others, competent for the following matters:
-a. deciding on appeals against refusals of membership;
-b. deciding on appeals against members exclusions;
-c. electing the Members of the Committee and appointing at least a President, a Secretary-General and a Treasurer;
-d. taking note of the reports and accounts for the exercise period and voting on their approval;
-e. approving the annual budget;
-f. controlling the activity of the other bodies, which it may dismiss for agood cause;
-g. electing and discharging the Auditors;
-h. deciding on any amendment to the articles of association;
-i. deciding on the dissolution of the Association;
-j. deciding on the amount of the membership fees;
-k. guaranteeing the pursuit of the Association's purpose;
-l. discharging members of bodies or bodies of the Association;
+
+% for competence in association.general_assembly.competences:
+% if association.general_assembly.competences[competence]:
+a. ${ competence }
+% endif
+% endfor
+
 m. other items on the agenda
 
 Art. 11 **Agenda of the General Assembly**
@@ -179,7 +174,7 @@ Art. 13 **Voting procedures**
 Art. 14 **Composition**
 
 1. The Committee is the governing body of the Association. It shall be composed of at least a President and a Treasurer.
-2. The Committee is composed of a minimum of ${ minimum_number } and a maximum of ${ maximum_number } natural persons elected by the General Assembly, including at least a President and a Treasurer.
+2. The Committee is composed of a minimum of ${ association.committee_minimum_number } and a maximum of ${ association.committee_maximum_number } natural persons elected by the General Assembly, including at least a President and a Treasurer.
 3. At least one member of the Committee, with power of signature, shall reside in Switzerland.
 4. The duration of their mandate is of one-year renewable.
 5. For each position, the candidate who obtains the greatest number of valid votes cast shall be elected. In the event of a tie, a second round shall be held to decide between the candidates.
@@ -189,18 +184,14 @@ Art. 14 **Composition**
 Art. 15 **Competences**
 
 The Committee shall be responsible for :
-1. taking the necessary measures to achieve the purpose of the Association;
-2. convening ordinary and extraordinary General Assemblys;
-3. taking decisions concerning the admission, resignation, and exclusion of members to ensure the application of the articles of association;
-4. drawing up the regulations;
-5. administering the assets of the Association;
-6. keeping the accounts of the Association;
-7. coordinating the activities of the Association, representing the Association vis-à-vis partners, members, and the public;
-8. hiring the staff necessary for the pursuit of the Association’s activities;
-9. creating sub-committees;
-10. transferring some of its competencies to sub-committees, secretariats or executive offices;
-11. tasks which are not under the competencies of the General Assembly and the Auditors;
-12. reporting to each General Assembly on the activities of the Association.
+
+% for competence in association.committee.competences:
+% if association.committee.competences[competence]:
+a. ${ competence }
+% endif
+% endfor
+
+
 
 Art. 16 **Organisation**
 

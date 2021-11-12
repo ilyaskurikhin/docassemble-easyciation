@@ -103,7 +103,7 @@ fields:
 section: Goals
 question: What is the ${ ordinal(i) } purpose?
 fields:
-  - Objective: goals[i]
+  - Objective: association.goals[i]
 ---
 section: Goals
 question: What is the primary purpose?
@@ -115,39 +115,66 @@ fields:
   - no label: primary_goal
     datatype: radio
     code: |
-      goals
+      association.goals
   - label: Are there any other purposes?
     datatype: yesnoradio
-    field: goals.there_is_another
+    field: association.goals.there_is_another
 help: |
   Remember to add the political or religious goals of your association if any.
 
 ---
-question: test
-yesno: general_assembly.composition
----
-generic object: DAObject
-question: How is ${ x } composed?
-fields:
-  - no label: x.composition
-    default: ${ x.default_composition }
-    datatype: area
----
-code: |
-  general_assembly.default_composition = "It is composed of the members of the Association."
-  committee.default_composition = commcompdefault
----
-template: commcompdefault
-content: |
-  "The Committee is composed of a minimum of ${ minimum_number } and a maximum of ${ maximum_number } natural persons elected by the General Assembly, including at least a President, a Secretary, and a Treasurer."
-
----
-section: Committee members
+section: Members
 question: Committee Composition
+subquestion: |
+  How many members would you like to committee to be able to have ?
+  The committe must have at least 2 members. 
 fields:
-  - What is the minimum number?: minimum_number
+  - What is the minimum number?: association.committee_minimum_number
     datatype: integer
-  - What is the maximum number?: maximum_number
+  - What is the maximum number?: association.committee_maximum_number
     datatype: integer
+---
+section: GA Competences
+question: General assembly Competences
+subquestion: |
+  Which of the following competences would you like to give the general assembly?
+fields: 
+  - no label: association.general_assembly.competences
+    datatype: checkboxes
+    choices:
+       - "deciding on appeals against refusals of membership;"
+       - "deciding on appeals against members exclusions;"
+       - "electing the Members of the Committee and appointing at least a President and a Treasurer;"
+       - "taking note of the reports and accounts for the exercise period and voting on their approval;"
+       - "approving the annual budget;"
+       - "controlling the activity of the other bodies, which it may dismiss for a good cause;"
+       - "electing and discharging the Auditors;"
+       - "deciding on any amendment to the articles of association;"
+       - "deciding on the dissolution of the Association;"
+       - "deciding on the amount of the membership fees;"
+       - "guaranteeing the pursuit of the Association's purpose;"
+       - "discharging members of bodies or bodies of the Association;"
+---
+section: Committee Competences
+question: Committee Competences
+subquestion: |
+  Which of the following competences would you like to give the committee?
+fields: 
+  - no label: association.committee.competences
+    datatype: checkboxes
+    choices:
+      - "taking the necessary measures to achieve the purpose of the Association;"
+      - "convening ordinary and extraordinary General Assemblys;"
+      - "taking decisions concerning the admission, resignation, and exclusion of members to ensure the application of the articles of association;"
+      - "drawing up the regulations;"
+      - "administering the assets of the Association;"
+      - "keeping the accounts of the Association;"
+      - "coordinating the activities of the Association, representing the Association vis-à-vis partners, members, and the public;"
+      - "hiring the staff necessary for the pursuit of the Association’s activities;"
+      - "creating sub-committees;"
+      - "transferring some of its competencies to sub-committees, secretariats or executive offices;"
+      - "tasks which are not under the competencies of the General Assembly and the Auditors;"
+      - "reporting to each General Assembly on the activities of the Association."
+---
 
 

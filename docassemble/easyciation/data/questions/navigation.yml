@@ -10,7 +10,11 @@ sections:
     - Duration
     - Headquarters
     - Goals
-    - Committee members
+  - General Assembly:
+    - GA Competences
+  - Committee:
+    - Members
+    - Committee Competences
   - Generate Statutes
 ---
 features:

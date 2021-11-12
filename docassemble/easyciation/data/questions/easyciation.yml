@@ -75,13 +75,12 @@ section: Welcome
 ---
 objects:
   - association: DAObject
-  - goals: DAList
-  - general_assembly: DAObject
-  - committee: DAObject
-  - auditors: DAObject
+  - association.committee: DAObject
+  - association.general_assembly: DAObject
+  - association.goals: DAList
 ---
 code: |
-  goals.there_are_any = True
+  association.goals.there_are_any = True
 ---
 # Statute generator
 #
@@ -90,7 +89,6 @@ code: |
 # for the PDF to be created, in the order that the variables 
 # appear in the document. 
 ---
-mandatory: True
 question: Here are the Articles of Association
 attachment:
   - name: Articles of Association
