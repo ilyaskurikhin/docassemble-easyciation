@@ -52,13 +52,12 @@ The address of the associaiton is : ${ association.address }
 
 Art. 3 **Purpose**
 
-1. The association has the following objects:
+1. The association has the following purposes:
 
 % for goal in goals:
 a. ${ goal };
 % endfor
 
-2. To this end, it aims notably to: ${ primary_goal }
 
 
 
