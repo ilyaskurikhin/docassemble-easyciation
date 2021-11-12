@@ -134,8 +134,20 @@ fields:
   - What is the maximum number?: association.committee_maximum_number
     datatype: integer
 ---
+section: Majority & Quorum
+question: General Assembly Majority & Quorum
+subquestion: |
+  What should the qualified majority threshold be?
+fields:
+  - "Qualified majority threshold": association.general_assembly.qualified_majority_threshold
+    datatype: range
+    min: 50
+    max: 100
+    step: 1
+    default: 66
+---
 section: GA Competences
-question: General assembly Competences
+question: General Assembly Competences
 subquestion: |
   Which of the following competences would you like to give the general assembly?
 fields: 
