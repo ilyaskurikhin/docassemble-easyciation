@@ -144,12 +144,13 @@ template: commcompdefault
 content: |
   "The Committee is composed of a minimum of ${ minimum_number } and a maximum of ${ maximum_number } natural persons elected by the General Assembly, including at least a President, a Secretary, and a Treasurer."
 
-
 ---
 section: Committee members
 question: Committee Composition
 fields:
   - What is the minimum number?: minimum_number
+    datatype: integer
   - What is the maximum number?: maximum_number
+    datatype: integer
 
 
