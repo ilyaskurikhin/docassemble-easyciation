@@ -14,15 +14,21 @@ ${association.logo}
 
 Art. 1 **Denomination**
 
-% if not association.political: 
+% if (association.is_political and association.is_religious): 
 
-1. ${ association.name } is an association according to the present articles of incorporation and the articles 60 CC and following of the Swiss Civil Code.
-
-2. The Association is non-political and confessionally independent.
+${ association.name } is an association according to the present articles of incorporation and the articles 60 CC and following of the Swiss Civil Code.
 
 % else:
 
-${ association.name } is an association according to the present articles of incorporation and the articles 60 CC and following of the Swiss Civil Code.
+1. ${ association.name } is an association according to the present articles of incorporation and the articles 60 CC and following of the Swiss Civil Code.
+
+% if association.is_political:
+2. The Association is confessionally independent.
+% elif association.is_religious:
+2. The Association is non-political.
+% else:
+2. The Association is non-political and confessionally independent.
+% endif
 
 % endif
 

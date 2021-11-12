@@ -33,13 +33,20 @@ help: |
   These are examples. Easyciation is in no way affiliated to these service providers.    
    
 ---
-section: Independance
-question: Will ${ association.name } pursue a political or religious goal?
+section: Independence
+question: Will ${ association.name } be politically and confessionnaly independent?
 subquestion: |
+  Does the association commit itsself to be independent:
+fields:
+  - "from any political party": association.is_political
+    datatype: yesnowide
+  - "from any religion": association.is_religious 
+    datatype: yesnowide
+    
+help: |
   If you answer no, your association will not be able to pursue a any goal that is politically or religiously oriented. We advise you to think broadly about what considered political or religious. 
   
   Your members individual views are not taken into account, what matters is the action of the association as a whole. 
-yesno: association.political
 ---
 section: Duration
 question: Do you want to limit the time that ${ association.name } will remain active?
@@ -104,7 +111,7 @@ fields:
 section: Goals
 question: What is the primary goal?
 subquestion: |
-  % if association.political:
+  % if (association.is_political or association.is_religious):
   Make sure to list the political or religious goal of your association. 
   % endif
 fields:
