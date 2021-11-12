@@ -170,11 +170,8 @@ Art. 13 **Voting procedures**
 
 Art. 14 **Composition**
 
-1. The Committee is the governing body of the Association. It shall be composed of at least :
-    a. A President;
-    b. A Secretary General;
-    c. A Treasurer.
-2. The Committee is composed of a minimum of ${ minimum_number } and a maximum of ${ maximum_number } natural persons elected by the General Assembly, including at least a President, a Secretary, and a Treasurer.
+1. The Committee is the governing body of the Association. It shall be composed of at least a President and a Treasurer.
+2. The Committee is composed of a minimum of ${ minimum_number } and a maximum of ${ maximum_number } natural persons elected by the General Assembly, including at least a President and a Treasurer.
 3. At least one member of the Committee, with power of signature, shall reside in Switzerland.
 4. The duration of their mandate is of one-year renewable.
 5. For each position, the candidate who obtains the greatest number of valid votes cast shall be elected. In the event of a tie, a second round shall be held to decide between the candidates.

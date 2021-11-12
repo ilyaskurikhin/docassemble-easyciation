@@ -14,7 +14,7 @@ code: |
     and legal_advice \
     and over_18 \
     and swiss_resident:
-    statutes_generated
+    generate_statutes
   else:
     eligibility_exception
 ---
@@ -97,7 +97,7 @@ attachment:
     filename: ${ association.name } - Statutes
     content file: statutes.md
 section: Generate Statutes
-continue button field: statutes_generated
+event: generate_statutes
 ---
 
 # Interview questions
