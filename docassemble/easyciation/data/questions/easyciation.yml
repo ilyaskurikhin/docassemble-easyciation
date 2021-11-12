@@ -12,7 +12,8 @@ code: |
   if welcome_complete \
     and terms_conditions \
     and legal_advice \
-    and eligibility_complete:
+    and over_18 \
+    and swiss_resident:
     statutes_generated
   else:
     eligibility_exception
@@ -117,14 +118,13 @@ fields:
 ---
 section: Eligibility
 question: Eligibility
-continue button field: eligibility_complete
 subquestion: |
   At least one of the founders MUST be older than 18 years old and reside in Switzerland.It at least one of the founders:
- 
-  * over 18 years old?
-  * a legal resident of Switzerland?
-  
-  If one of you fulfills both conditions, press continue. 
+fields: 
+  - "over 18 years old?": over_18
+    datatype: yesnowide
+  - "resident in Switzerland?": swiss_resident
+    datatype: yesnowide
   
 help: |
   For your association to be created and to be able to manage it successfully, one of the founders needs to fulfill some conditions. 
