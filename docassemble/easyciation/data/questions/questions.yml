@@ -137,14 +137,26 @@ fields:
 section: Majority & Quorum
 question: General Assembly Majority & Quorum
 subquestion: |
-  What should the qualified majority threshold be?
+  What should the qualified majority and quorum thresholds be?
 fields:
-  - "Qualified majority threshold": association.general_assembly.qualified_majority_threshold
+  - label: "Qualified majority threshold percentage of members present"
+    field:  association.general_assembly.qualified_majority_threshold
     datatype: range
     min: 50
     max: 100
     step: 1
     default: 66
+    help: |
+      What percentage of members present need to vote for a particularly important proposition for it to pass?
+  - label: "Quorum threshold percentage of members"
+    field: association.general_assembly.quorum_threshold
+    datatype: range
+    min: 0
+    max: 100
+    step: 1
+    default: 20
+    help: |
+      What percentage of members need to be present for a decision of the assembly to be valid?
 ---
 section: GA Competences
 question: General Assembly Competences

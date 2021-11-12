@@ -159,6 +159,7 @@ Art. 12 **Majority and Quorum**
 
 1. Decisions of the General Assembly shall be taken by a simple majority of the votes of the members present. The President has the casting vote.
 2. Decisions concerning the amendment of the articles of association and the dissolution of the Association may only be taken by a majority ${ association.general_assembly.qualified_majority_threshold } % of the members present. The same applies to appeals against refusals of membership and members exclusions.
+3. Decisions votes by an assembly with less than ${ association.general_assembly.quorum_threshold } % of members present are not valid. 
 
 Art. 13 **Voting procedures**
 
