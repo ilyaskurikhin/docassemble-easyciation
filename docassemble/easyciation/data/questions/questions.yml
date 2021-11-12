@@ -6,8 +6,7 @@ subquestion: |
 fields:
   - Name: association.name
 help: |
-  If you are not sure how much
-  money to seek 
+  You should be creative with the name of your association. 
 ---
 section: Logo
 question: Logo of the association
@@ -23,15 +22,12 @@ fields:
       "image/jpeg, image/png, image/bmp, image/svg"
     image upload type: jpeg
 
-mandatory: false
-
 help: |
-  A logo is not mandatory.
   You can create a free logo using any of the following platforms:
   [Free Logo Design.](https://fr.freelogodesign.org/)
   [Looka.](https://looka.com/logo-maker/)
   [Brandcrowd.](https://www.brandcrowd.com/)
-  These are examples. Easyciation is in no way affiliated to these service providers.    
+  These are examples. Easyciation is not affiliated to these service providers.    
    
 ---
 section: Independence
@@ -70,7 +66,7 @@ subquestion: |
 fields: 
 
 - Canton: association.canton
-  input type: dropdown
+  input type: combobox
   choices:
     - Appenzell Auserrhoden (AR)
     - Appenzell Innerrhoden (AI)
