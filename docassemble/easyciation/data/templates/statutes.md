@@ -235,11 +235,11 @@ Art. 22 **Accounting**
 
 Art. 23 **Forum and applicable law**
 
-Any dispute, controversy or claim arising out of or in connection with these Articles of Association, including their validity, nullity, breach, or dissolution, shall be resolved before the courts of Geneva - respectively the Federal Court - in accordance with Swiss law.
+Any dispute, controversy or claim arising out of or in connection with these Articles of Association, including their validity, nullity, breach, or dissolution, shall be resolved before the courts of ${ association.canton } - respectively the Federal Court - in accordance with Swiss law.
 
 Art. 24 **Entering into force**
 
-1. The present articles of association were adopted by the constitutive General Assembly of XX XXXX XXXX at MM:HH. [OR] These articles of association, fully amended and adopted by the General Assembly of XXXX, replace and cancel all previously approved articles of association.
+1. The present articles of association were adopted by the constitutive General Assembly on the date of ___________________________.
 2. They shall enter into force on the date of their approval.
 
 Art. 25 **Displays and Communication**
