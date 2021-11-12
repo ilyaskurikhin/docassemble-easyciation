@@ -9,9 +9,13 @@ include:
 # Ensure that every visitor sees the welcome page first. 
 mandatory: True
 code: |
-  welcome_complete
-  disclaimer_complete
-  eligibility_complete
+  if welcome_complete \
+    and terms_conditions \
+    and legal_advice \
+    and eligibility_complete:
+    statutes_generated
+  else:
+    eligibility_exception
 ---
 
 # Welcome page
@@ -92,6 +96,7 @@ attachment:
     filename: ${ association.name } - Statutes
     content file: statutes.md
 section: Generate Statutes
+continue button field: statutes_generated
 ---
 
 # Interview questions
@@ -100,9 +105,13 @@ section: Generate Statutes
 ---
 section: Disclaimer
 question: Disclaimer
-continue button field: disclaimer_complete
 subquestion: |
   By pressing continue below, you acknowledge that you understand [terms and conditions]
+fields:
+  - "I understand the terms and conditions": terms_conditions
+    datatype: yesnowide
+  - "I understand that this website is not legal advice": legal_advice
+    datatype: yesnowide
 ---
 # check that client is of age and has representative in CH
 ---
@@ -120,4 +129,13 @@ subquestion: |
 help: |
   For your association to be created and to be able to manage it successfully, one of the founders needs to fulfill some conditions. 
 ---
+section: Welcome
+event: eligibility_exception
+question: Thank you!
+subquestion: |
+  Thank you for trying to use our automated statute creation tool. Unfortunately we are not able to help you today, but please check by again, as we are continously improving.
 
+buttons: 
+  - Start again: restart
+  - Exit: exit
+    url: https://easyciation.ch
