@@ -103,7 +103,7 @@ event: generate_statutes
 section: Disclaimer
 question: Disclaimer
 subquestion: |
-  By pressing continue below, you acknowledge that you understand [terms and conditions]
+  By pressing continue below, you acknowledge that you understand the [terms and conditions]
 fields:
   - "I understand the terms and conditions": terms_conditions
     datatype: yesnowide
@@ -115,15 +115,20 @@ fields:
 section: Eligibility
 question: Eligibility
 subquestion: |
-  At least one of the founders MUST be older than 18 years old and reside in Switzerland.It at least one of the founders:
+  At least one of the founders MUST be older than 18 years old and reside in Switzerland.   
+  Is at least one of the founders:
 fields: 
   - "over 18 years old?": over_18
     datatype: yesnowide
-  - "resident in Switzerland?": swiss_resident
+  - "a legal resident in Switzerland?": swiss_resident
     datatype: yesnowide
   
 help: |
-  For your association to be created and to be able to manage it successfully, one of the founders needs to fulfill some conditions. 
+  Under certain circumstances,  it is possible to create an association under Swiss law whithout being over 18 years old and/or without being a Swiss resident.  
+  To avoid the restrictions that may apply in such cases, and to facilitate a successful day to day management of your association, we offer our service exclusively to association that meet the following condition:  
+  
+  * At least one of the founders is over 18 years old AND is a legal resident in Switzerland  
+  
 ---
 section: Welcome
 event: eligibility_exception
