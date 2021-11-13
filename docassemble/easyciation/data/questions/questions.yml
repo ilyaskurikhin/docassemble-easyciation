@@ -181,18 +181,18 @@ fields:
   - no label: association.general_assembly.competences
     datatype: checkboxes
     choices:
-       - "deciding on appeals against refusals of membership;"
-       - "deciding on appeals against members exclusions;"
-       - "electing the Members of the Committee and appointing at least a President and a Treasurer;"
-       - "taking note of the reports and accounts for the exercise period and voting on their approval;"
-       - "approving the annual budget;"
-       - "controlling the activity of the other bodies, which it may dismiss for a good cause;"
-       - "electing and discharging the Auditors;"
-       - "deciding on any amendment to the articles of association;"
-       - "deciding on the dissolution of the Association;"
-       - "deciding on the amount of the membership fees;"
-       - "guaranteeing the pursuit of the Association's purpose;"
-       - "discharging members of bodies or bodies of the Association;"
+       - "Deciding on appeals against refusals of membership;"
+       - "Deciding on appeals against members exclusions;"
+       - "Electing the Members of the Committee and appointing at least a President and a Treasurer;"
+       - "Taking note of the reports and accounts for the exercise period and voting on their approval;"
+       - "Approving the annual budget;"
+       - "Controlling the activity of the other bodies, which it may dismiss for a good cause;"
+       - "Electing and discharging the Auditors;"
+       - "Deciding on any amendment to the articles of association;"
+       - "Deciding on the dissolution of the Association;"
+       - "Deciding on the amount of the membership fees;"
+       - "Guaranteeing the pursuit of the Association's purpose;"
+       - "Discharging members of bodies or bodies of the Association;"
 ---
 section: Committee Competences
 question: Committee Competences
