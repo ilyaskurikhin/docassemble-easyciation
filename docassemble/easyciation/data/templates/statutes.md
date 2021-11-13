@@ -23,18 +23,18 @@ ${ association.name } is an association according to the present articles of inc
 1. ${ association.name } is an association according to the present articles of association and the articles 60 and following of the Swiss Civil Code.
 
 % if association.is_political:
-2. The Association is confessionally independent.
+2. The Association is independent from any religious affiliation.
 % elif association.is_religious:
-2. The Association is non-political.
+2. The Association is independant from any political affiliation.
 % else:
-2. The Association is non-political and confessionally independent.
+2. The Association is independent from any religious or political affiliation.
 % endif
 
 % endif
 
 
 
-Art. 2 **Duration et headquarters**
+Art. 2 **Duration and headquarters**
 
 % if association.is_limited_period:
 The Association is established until the ${ association.end_date }
@@ -42,7 +42,7 @@ The Association is established until the ${ association.end_date }
 The Association is established for an unlimited period of time.
 % endif
 
-The headquarters of the association are in the canton: ${ association.canton }.
+The headquarters of the association are in the canton of: ${ association.canton }.
 
 % if "ZH" in association.canton:
 The address of the associaiton is : ${ association.address }
