@@ -31,9 +31,9 @@ help: |
    
 ---
 section: Independence
-question: Will ${ association.name } be politically and confessionnaly independent?
+question: Will ${ association.name } be independant from any political affiliation or religious affiliation?
 subquestion: |
-  Does the association commit itsself to be independent:
+  Does the association commit to be independent:
 fields:
   - "from any political party": association.is_political
     datatype: yesnowide
@@ -41,9 +41,14 @@ fields:
     datatype: yesnowide
     
 help: |
-  If you answer no, your association will not be able to pursue a any goal that is politically or religiously oriented. We advise you to think broadly about what considered political or religious. 
+  * If you answer **yes**, remember to list your affiliations among your objectives on the section about **_Goals_**  
+  * If you answer **no**, your association will not be able to pursue any goal that is politically or religiously oriented.  
   
-  Your members individual views are not taken into account, what matters is the action of the association as a whole. 
+  We advise you to think broadly about what considered political or religious.  
+  
+  For example, imagine your association aims at organizing classical music concerts. You start looking for venues and a local church accepts to host you for all rehearsals and concerts. This opens the door to interpretation and depending on the nature of your agreement and activity your association might be considered as affilited to this particular church.
+  
+  **Note:** Your members individual views are not taken into account, what matters is the position of the association as a whole. 
 ---
 section: Duration
 question: Do you want to limit the time that ${ association.name } will remain active?
