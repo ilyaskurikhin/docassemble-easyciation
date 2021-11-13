@@ -1,6 +1,6 @@
-[BOLDCENTER]${ association.name }
-
 [BOLDCENTER]Articles of Association
+
+[BOLDCENTER]${ association.name }
 
 %if association.has_logo:
 [CENTER]${association.logo}
