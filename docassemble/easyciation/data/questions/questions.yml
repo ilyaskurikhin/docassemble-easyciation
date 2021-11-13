@@ -141,8 +141,9 @@ help: |
 section: Members
 question: Committee Composition
 subquestion: |
-  How many members would you like to committee to be able to have ?
-  The committe must have at least 2 members. 
+  How many members would you like to committee to be able to have ?  
+  
+  The committee must have at least two members.
 fields:
   - What is the minimum number?: association.committee_minimum_number
     datatype: integer
@@ -202,18 +203,18 @@ fields:
   - no label: association.committee.competences
     datatype: checkboxes
     choices:
-      - "taking the necessary measures to achieve the purpose of the Association;"
-      - "convening ordinary and extraordinary General Assemblys;"
-      - "taking decisions concerning the admission, resignation, and exclusion of members to ensure the application of the articles of association;"
-      - "drawing up the regulations;"
-      - "administering the assets of the Association;"
-      - "keeping the accounts of the Association;"
-      - "coordinating the activities of the Association, representing the Association vis-à-vis partners, members, and the public;"
-      - "hiring the staff necessary for the pursuit of the Association’s activities;"
-      - "creating sub-committees;"
-      - "transferring some of its competencies to sub-committees, secretariats or executive offices;"
-      - "tasks which are not under the competencies of the General Assembly and the Auditors;"
-      - "reporting to each General Assembly on the activities of the Association."
+      - "Taking the necessary measures to achieve the purpose of the Association;"
+      - "Convening ordinary and extraordinary General Assemblys;"
+      - "Taking decisions concerning the admission, resignation, and exclusion of members to ensure the application of the articles of association;"
+      - "Drawing up the regulations;"
+      - "Administering the assets of the Association;"
+      - "Keeping the accounts of the Association;"
+      - "Coordinating the activities of the Association, representing the Association vis-à-vis partners, members, and the public;"
+      - "Hiring the staff necessary for the pursuit of the Association’s activities;"
+      - "Creating sub-committees;"
+      - "Transferring some of its competencies to sub-committees, secretariats or executive offices;"
+      - "Tasks which are not under the competencies of the General Assembly and the Auditors;"
+      - "Reporting to each General Assembly on the activities of the Association."
 ---
 
 
