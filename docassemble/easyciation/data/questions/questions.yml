@@ -54,7 +54,7 @@ help: |
 section: Duration
 question: Do you want to limit the time during which ${ association.name } will remain active?
 subquestion: |
-  If you are creating this association for one particular event, you can limit its life in the statutes. 
+  If you are creating this association for one particular event, you can limit its life in the articles of association. 
 fields: 
   - Do you want to plan an end date?: association.is_limited_period
     datatype: yesnoradio
@@ -73,7 +73,8 @@ help: |
 section: Headquarters
 question: Headquarters
 subquestion: |
-  Your association need to have a home. This is usually the place where your association will meet most often.
+  Your need to define a canton jurisdiction for your association.  
+  If the association is based in the canton of Zurich you will also need to determine an exact postal address in your articles of association.
 
 fields: 
 
