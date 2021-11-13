@@ -73,8 +73,9 @@ help: |
 section: Headquarters
 question: Headquarters
 subquestion: |
-  Your need to define a canton jurisdiction for your association.  
-  If the association is based in the canton of Zurich you will also need to determine an exact postal address in your articles of association.
+  You need to define a cantonal jurisdiction for your association.  
+  
+  If the association is based in the canton of Zurich you will also need to determine an address in your articles of association.
 
 fields: 
 
