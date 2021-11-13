@@ -133,6 +133,8 @@ fields:
     datatype: yesnoradio
     field: association.goals.there_is_another
 help: |
+  Try to be as broad as possible to avoid having to re-draft your articles of association.  
+  
   Remember to add the political or religious goals of your association if any.
 
 ---
