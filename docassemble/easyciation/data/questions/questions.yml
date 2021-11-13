@@ -52,7 +52,7 @@ help: |
   **Note:** Your members individual views are not taken into account, what matters is the position of the association as a whole. 
 ---
 section: Duration
-question: Do you want to limit the time that ${ association.name } will remain active?
+question: Do you want to limit the time during which ${ association.name } will remain active?
 subquestion: |
   If you are creating this association for one particular event, you can limit its life in the statutes. 
 fields: 
@@ -63,6 +63,12 @@ fields:
     show if:
       variable: association.is_limited_period
       is: True
+      
+help: |
+  For example: The objective of your association is to organise conferences during a specific space mission. In this case you could have an expected end date.  
+  Keep in mind that another option is to end the association once it ceases to serve its purpose.
+  
+  
 ---
 section: Headquarters
 question: Headquarters
