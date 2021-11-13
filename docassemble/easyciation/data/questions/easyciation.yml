@@ -103,7 +103,7 @@ event: generate_statutes
 section: Disclaimer
 question: Disclaimer
 subquestion: |
-  By pressing continue below, you acknowledge that you understand the [terms and conditions]
+  Please confirm that you have read and understand the [terms and conditions](${url_of("Terms_and_Conditions.pdf")})
 fields:
   - "I understand the terms and conditions": terms_conditions
     datatype: yesnowide
