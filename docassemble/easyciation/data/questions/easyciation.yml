@@ -109,7 +109,7 @@ subquestion: |
 fields:
   - "I understand the terms and conditions": terms_conditions
     datatype: yesnowide
-  - "I understand that this website is not legal advice": legal_advice
+  - "I understand that this website does not provide legal advice": legal_advice
     datatype: yesnowide
 ---
 # check that client is of age and has representative in CH
