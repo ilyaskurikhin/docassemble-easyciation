@@ -73,11 +73,11 @@ a. ${ goal }
 Art. 4 **Resources**
 
 The Association’s resources come from: 
-a. donations and bequests
-b. sponsorship
-c. public and private subventions
-d. contributions from members
-e. and any resources authorized by law
+  a. donations and bequests  
+  b. sponsorship  
+  c. public and private subventions  
+  d. contributions from members  
+  e. and any resources authorized by law  
 
 
 
