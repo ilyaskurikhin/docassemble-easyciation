@@ -6,7 +6,8 @@ subquestion: |
 fields:
   - Name: association.name
 help: |
-  You should be creative with the name of your association. 
+  You can be creative with the name of your association. It makes sense for the name to reflect in some way the activity and goals that you will be pursuing.  
+  For example: an association organizing painting classes in the neighborhood of Carouge could be named _Painting in Carouge_.
 ---
 section: Logo
 question: Logo of the association
