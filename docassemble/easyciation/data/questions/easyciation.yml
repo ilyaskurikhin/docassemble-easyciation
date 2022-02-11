@@ -9,14 +9,25 @@ include:
 # Ensure that every visitor sees the welcome page first. 
 mandatory: True
 code: |
-  if welcome_complete \
-    and terms_conditions \
-    and legal_advice \
-    and over_18 \
-    and swiss_resident:
+  if fill_defaults:
     generate_statutes
   else:
-    eligibility_exception
+    if welcome_complete \
+      and terms_conditions \
+      and legal_advice \
+      and over_18 \
+      and swiss_resident:
+      generate_statutes
+    else:
+      eligibility_exception
+---
+
+---
+continue button field: dev_mode_question
+question: Enable dev mode ?
+fields:
+  - "Fill all fields with default values ?" : fill_defaults
+    datatype: yesnowide
 ---
 
 # Welcome page
