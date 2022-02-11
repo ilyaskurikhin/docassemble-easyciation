@@ -91,7 +91,7 @@ question: Here are the Articles of Association
 attachment:
   - name: Articles of Association
     filename: ${ association.name } - Articles of Association
-    content file: statutes.md
+    docx template file: statutes_template.docx
 section: Generate Articles of Association
 event: generate_statutes
 ---
