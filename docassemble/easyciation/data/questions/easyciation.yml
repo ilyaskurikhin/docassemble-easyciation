@@ -10,12 +10,13 @@ include:
 mandatory: True
 code: |
   if fill_defaults:
-    association.name = "Default association"
-    association.has_logo = False
-    association.is_political = False
-    association.is_religious = False
-    association.is_limited_period = False
-    association.canton = "Genève (GE)"
+    #association.name = "Default association"
+    #association.has_logo = False
+    #association.is_political = False
+    #association.is_religious = False
+    #association.is_limited_period = False
+    #association.canton = "Genève (GE)"
+    generate_statutes
   else:
     if welcome_complete \
       and terms_conditions \
